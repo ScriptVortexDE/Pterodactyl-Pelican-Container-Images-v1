@@ -1,1 +1,290 @@
 # Pterodactyl-Pelican-Container-Images-v1
+
+## Pelican/Pterodactyl/WISP Docker Images
+
+Docker images that can be used with the Pelican/Pterodactyl/WISP Game Panel. You can request more images by opening a new issue. These are mostly created for myself.
+
+Additional Pterodactyl images can be found at [Parkervcp](https://github.com/parkervcp/images), [Matthewpi](https://github.com/matthewpi/images) and [Yolks](https://github.com/pterodactyl/yolks) repositories.
+
+## How to add image to your egg
+
+Navigate to `Admin Panel -> Nests -> Select your egg`. Add Docker image URL(s) from the [available list](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#pterodactylwisp-images) into the Docker Images section.
+
+![image](https://user-images.githubusercontent.com/10975908/120903180-56719d80-c64d-11eb-8666-02de8ea80701.png)
+
+### Supported Platforms
+
+| Image                                                                                                       | Supported platforms |
+| ----------------------------------------------------------------------------------------------------------- | ------------------- |
+| [Java Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-amazon-corretto-amd64arm64) | AMD64, ARM64        |
+| [Java Azul Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-azul-zulu-amd64arm64)             | AMD64, ARM64        |
+| [Java Dragonwell](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-dragonwell-amd64arm64)           | AMD64, ARM64        |
+| [Java Eclipse Temurin](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-eclipse-temurin-amd64arm64) | AMD64, ARM64        |
+| [Java GraalVM](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-graalvm-amd64arm64)                 | AMD64, ARM64        |
+| [Java Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-liberica-amd64arm64)               | AMD64, ARM64        |
+| [Java OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-openj9-amd64)                        | AMD64               |
+| [Java Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#java-shipilev-experimental-amd64)        | AMD64               |
+| [Node.js](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#nodejs-amd64arm64)                            | AMD64, ARM64        |
+| [Python](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#python-amd64arm64)                             | AMD64, ARM64        |
+| [Sourcemod](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1#sourcemod-amd64)                            | AMD64               |
+
+### Java Amazon Corretto [AMD64/ARM64]
+
+- [Java 8 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_corretto`
+- [Java 11 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_corretto`
+- [Java 17 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_corretto`
+- [Java 19 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/19)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_19_corretto`
+- [Java 20 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/20)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_20_corretto`
+- [Java 21 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_corretto`
+- [Java 22 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_22_corretto`
+- [Java 23 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_23_corretto`
+- [Java 24 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_24_corretto`
+- [Java 25 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_corretto`
+- [Java 26 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_26_corretto`
+- [Java 27 Amazon Corretto](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-corretto/27)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_27_corretto`
+
+### Java Azul Zulu [AMD64/ARM64]
+
+- [Java 8 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_zulu`
+- [Java 11 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_zulu`
+- [Java 16 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/16)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_16_zulu`
+- [Java 17 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_zulu`
+- [Java 18 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/18)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_18_zulu`
+- [Java 19 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/19)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_19_zulu`
+- [Java 20 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/20)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_20_zulu`
+- [Java 21 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_zulu`
+- [Java 22 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_22_zulu`
+- [Java 23 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_23_zulu`
+- [Java 24 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_24_zulu`
+- [Java 25 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_zulu`
+- [Java 26 Zulu](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-zulu/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_26_zulu`
+
+### Java Dragonwell [AMD64/ARM64]
+
+- [Java 8 Dragonwell](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-dragonwell/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_dragonwell`
+- [Java 11 Dragonwell](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-dragonwell/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_dragonwell`
+- [Java 17 Dragonwell](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-dragonwell/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_dragonwell`
+- [Java 21 Dragonwell](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-dragonwell/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_dragonwell`
+- [Java 25 Dragonwell](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-dragonwell/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_dragonwell`
+
+### Java Eclipse Temurin [AMD64/ARM64]
+
+- [Java 8](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8`
+- [Java 11](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11`
+- [Java 16](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/16)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_16`
+- [Java 17](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17`
+- [Java 18](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/18)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_18`
+- [Java 19](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/19)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_19`
+- [Java 20](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/20)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_20`
+- [Java 21](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21`
+- [Java 22](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_22`
+- [Java 23](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_23`
+- [Java 24](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_24`
+- [Java 25](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25`
+- [Java 26](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_26`
+- [Java 27](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java/27)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_27`
+
+### Java GraalVM [AMD64/ARM64]
+
+**NOTE**: Java 8 is AMD64 only due to lack of support from upstream. GraalVM Community does not publish container images for Java 26+ yet.
+
+- [Java 8 GraalVM-CE](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_graalvm`
+- [Java 11 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_graalvm`
+- [Java 17 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_graalvm`
+- [Java 21 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_graalvm`
+- [Java 22 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_22_graalvm`
+- [Java 23 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_23_graalvm`
+- [Java 24 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_24_graalvm`
+- [Java 25 GraalVM JDK](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-graalvm/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_graalvm`
+
+### Java Liberica [AMD64/ARM64]
+
+- [Java 8 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_liberica`
+- [Java 11 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_liberica`
+- [Java 17 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_liberica`
+- [Java 21 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_liberica`
+- [Java 22 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_22_liberica`
+- [Java 23 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_23_liberica`
+- [Java 24 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_24_liberica`
+- [Java 25 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_liberica`
+- [Java 26 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_26_liberica`
+- [Java 27 Liberica](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-liberica/27)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_27_liberica`
+
+### Java OpenJ9 [AMD64/ARM64]
+
+- [Java 8 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_openj9`
+- [Java 11 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_openj9`
+- [Java 16 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/16)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_16_openj9`
+- [Java 17 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_openj9`
+- [Java 18 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/18)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_18_openj9`
+- [Java 20 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/20)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_20_openj9`
+- [Java 21 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_openj9`
+- [Java 22 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_22_openj9`
+- [Java 23 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_23_openj9`
+- [Java 24 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_24_openj9`
+- [Java 25 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_openj9`
+- [Java 26 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_26_openj9`
+- [Java 27 OpenJ9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-openj9/27)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_27_openj9`
+
+### Java Shipilev Experimental [AMD64]
+
+These are [shipilev experimental builds.](https://builds.shipilev.net/) If you're looking for Shenandoah GC, it is also by default shipped with at least Azul, Corretto and Temurin images starting with Java 11.
+
+- [Java 8 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_8_shenandoah`
+- [Java 11 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_11_shenandoah`
+- [Java 17 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_17_shenandoah`
+- [Java 21 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_21_shenandoah`
+- [Java 25 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_25_shenandoah`
+- [Java 26 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_26_shenandoah`
+- [Java 27 Shenandoah](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/java-shenandoah/27)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_27_shenandoah`
+
+### Node.js [AMD64/ARM64]
+
+- [Nodejs 12](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/12)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_12`
+- [Nodejs 14](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/14)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_14`
+- [Nodejs 15](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/15)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_15`
+- [Nodejs 16](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/16)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_16`
+- [Nodejs 17](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/17)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_17`
+- [Nodejs 18](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/18)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_18`
+- [Nodejs 19](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/19)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_19`
+- [Nodejs 20](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/20)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_20`
+- [Nodejs 21](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/21)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_21`
+- [Nodejs 22](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/22)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_22`
+- [Nodejs 23](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/23)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_23`
+- [Nodejs 24](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/24)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_24`
+- [Nodejs 25](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/25)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_25`
+- [Nodejs 26](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/nodejs/26)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:nodejs_26`
+
+### Python [AMD64/ARM64]
+
+- [Python 2.7](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/2.7)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_2.7`
+- [Python 3.6](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.6)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.6`
+- [Python 3.7](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.7)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.7`
+- [Python 3.8](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.8)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.8`
+- [Python 3.9](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.9)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.9`
+- [Python 3.10](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.10)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.10`
+- [Python 3.11](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.11)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.11`
+- [Python 3.12](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.12)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.12`
+- [Python 3.13](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.13)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.13`
+- [Python 3.14](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.14)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.14`
+- [Python 3.15-rc](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/python/3.15-rc)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:python_3.15-rc`
+
+## Game specific
+
+### Sourcemod [AMD64]
+
+- [Source with sourcemod](https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1/tree/main/games/source-sourcemod)
+  - `ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:games_source-sourcemod`
+
+  Optionally installs and updates SourceMod/Metamod on each server startup. Requires adding egg environment variable `SOURCEMOD`.
+
+  ![image](https://user-images.githubusercontent.com/10975908/159126935-2e3f2883-3b89-4395-b28d-ab23dad0e5f8.png)
+
+  Custom versions can be set with the use of `SM_VERSION` and `MM_VERSION` variables. Invalid versions will default to the latest stable version. Default path is set to csgo and can be overridden with `INSTALL_PATH` egg environment variable.
