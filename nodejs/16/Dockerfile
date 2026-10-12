@@ -1,4 +1,4 @@
-FROM        node:16-bullseye-slim
+FROM        node:16-bookworm-slim
 
 LABEL       author="Auroa Online" maintainer="hello@auroa.cloud"
 LABEL       org.opencontainers.image.source="https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1"

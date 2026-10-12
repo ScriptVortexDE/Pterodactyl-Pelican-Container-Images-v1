@@ -4,6 +4,11 @@ LABEL       author="Auroa Online" maintainer="hello@auroa.cloud"
 LABEL       org.opencontainers.image.source="https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1"
 LABEL       org.opencontainers.image.licenses="MIT"
 
+# Debian buster is EOL and only available on archive.debian.org
+RUN         printf 'deb http://archive.debian.org/debian buster main\ndeb http://archive.debian.org/debian-security buster/updates main\n' > /etc/apt/sources.list \
+            && rm -f /etc/apt/sources.list.d/*.list /etc/apt/sources.list.d/*.sources \
+            && printf 'Acquire::Check-Valid-Until "false";\n' > /etc/apt/apt.conf.d/99archive
+
 RUN         apt-get update \
             && apt-get -y install --no-install-recommends git gcc g++ ca-certificates dnsutils curl iproute2 ffmpeg procps locales \
             && apt-get clean \

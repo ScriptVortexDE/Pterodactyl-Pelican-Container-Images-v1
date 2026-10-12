@@ -1,4 +1,4 @@
-FROM        node:20-bullseye-slim
+FROM        node:20-bookworm-slim
 
 LABEL       author="Auroa Online" maintainer="hello@auroa.cloud"
 LABEL       org.opencontainers.image.source="https://github.com/ScriptVortexDE/Pterodactyl-Pelican-Container-Images-v1"
@@ -6,7 +6,7 @@ LABEL       org.opencontainers.image.licenses="MIT"
 
 RUN         apt-get update \
             && apt-get -y install --no-install-recommends curl ffmpeg iproute2 git sqlite3 python3 tzdata ca-certificates dnsutils build-essential locales \
-            && npm -g install npm@latest \
+            && npm -g install npm@11 \
             && apt-get clean \
             && rm -rf /var/lib/apt/lists/* \
             && useradd -m -d /home/container container \

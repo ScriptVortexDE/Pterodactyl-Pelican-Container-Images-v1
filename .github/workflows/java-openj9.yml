@@ -58,7 +58,8 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: ./java-openj9
-          platforms: linux/amd64,linux/arm64
+          # Semeru 16 has no arm64 build upstream
+          platforms: ${{ matrix.tag == 16 && 'linux/amd64' || 'linux/amd64,linux/arm64' }}
           file: ./java-openj9/${{ matrix.tag }}/Dockerfile
           push: true
           tags: ghcr.io/scriptvortexde/pterodactyl-pelican-container-images-v1:java_${{ matrix.tag }}_openj9
